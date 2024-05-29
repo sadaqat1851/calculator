@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="m-0 flex justify-center items-center h-screen bg-yellow-500">
+    <div id="Calculator" class="font-sans bg-gray-900 rounded-lg max-w-xs overflow-hidden p-4">
+        <input id="display" readonly class="w-full p-5 text-3xl text-left bg-gray-800 text-white mb-4 border-none">
+        <div id="keys" class="grid grid-cols-4 gap-4">
+            <button onclick="appendToDisplay('+')"
+                class="operator-button bg-orange-500 hover:bg-orange-400 active:bg-orange-300 text-white text-3xl font-bold rounded-full py-4">+</button>
+            <button onclick="appendToDisplay('7')"
+                class="bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">7</button>
+            <button onclick="appendToDisplay('8')"
+                class="bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">8</button>
+            <button onclick="appendToDisplay('9')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">9</button>
+            <button onclick="appendToDisplay('-')"
+                class="operator-button bg-orange-500 hover:bg-orange-400 active:bg-orange-300 text-white text-3xl font-bold rounded-full py-4">-</button>
+            <button onclick="appendToDisplay('4')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">4</button>
+            <button onclick="appendToDisplay('5')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">5</button>
+            <button onclick="appendToDisplay('6')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">6</button>
+            <button onclick="appendToDisplay('*')"
+                class="operator-button bg-orange-500 hover:bg-orange-400 active:bg-orange-300 text-white text-3xl font-bold rounded-full py-4">*</button>
+            <button onclick="appendToDisplay('1')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">1</button>
+            <button onclick="appendToDisplay('2')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">2</button>
+            <button onclick="appendToDisplay('3')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">3</button>
+            <button onclick="appendToDisplay('/')"
+                class="operator-button bg-orange-500 hover:bg-orange-400 active:bg-orange-300 text-white text-3xl font-bold rounded-full py-4">/</button>
+            <button onclick="appendToDisplay('0')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">0</button>
+            <button onclick="appendToDisplay('.')"
+                class=" bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">.</button>
+            <button onclick="calculate()"
+                class="bg-gray-500 hover:bg-gray-400 active:bg-gray-300 text-white text-3xl font-bold rounded-full py-4">=</button>
+            <button onclick="clearDisplay()"
+                class="operator-btn bg-orange-500 hover:bg-orange-400 active:bg-orange-300 text-white text-3xl font-bold rounded-full py-4">C</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
